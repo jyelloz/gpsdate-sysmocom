@@ -3,5 +3,5 @@ Description=Set time based on GPS
 
 [Service]
 Type=simple
-EnvironmentFile=/etc/default/gpsdate
+EnvironmentFile=-/etc/default/gpsdate
 ExecStart=/usr/sbin/gpsdate --no-detach ${GPSDATE_HOST} ${GPSDATE_PORT}
